@@ -1,6 +1,8 @@
 ### This is a fork of [websocket-sharp](https://github.com/sta/websocket-sharp/)
 
-The original project no longer comes with a Unity package, this fork is modified so that it can be dropped directly into Unity.
+This fork was made so that
+- We could make some light modifications to make it possible to drop the project directly into Unity as a submodule
+- We would have our own mirror
 
 ---
 
