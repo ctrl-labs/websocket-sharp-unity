@@ -6,6 +6,12 @@ This fork was made so that
 
 Note that the original project comes with examples that were removed from this repo.
 
+# Installation instructions
+
+```
+git submodule add git@github.com:ctrl-labs/websocket-sharp-unity.git Assets/websockets-sharp-unity
+```
+
 ---
 
 ![Logo](websocket-sharp_logo.png)
