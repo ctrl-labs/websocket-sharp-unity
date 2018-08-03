@@ -1158,8 +1158,10 @@ namespace WebSocketSharp.Net
     /// <exception cref="ArgumentNullException">
     /// <paramref name="serializationInfo"/> is <see langword="null"/>.
     /// </exception>
+    #pragma warning disable 0618
     [SecurityPermission (
       SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.SerializationFormatter)]
+    #pragma warning restore 0618
     public override void GetObjectData (
       SerializationInfo serializationInfo, StreamingContext streamingContext)
     {
@@ -1444,10 +1446,12 @@ namespace WebSocketSharp.Net
     /// <exception cref="ArgumentNullException">
     /// <paramref name="serializationInfo"/> is <see langword="null"/>.
     /// </exception>
+    #pragma warning disable 0618
     [SecurityPermission (
       SecurityAction.LinkDemand,
       Flags = SecurityPermissionFlag.SerializationFormatter,
       SerializationFormatter = true)]
+    #pragma warning restore 0618
     void ISerializable.GetObjectData (
       SerializationInfo serializationInfo, StreamingContext streamingContext)
     {

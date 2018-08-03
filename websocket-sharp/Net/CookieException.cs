@@ -106,8 +106,10 @@ namespace WebSocketSharp.Net
     /// <param name="streamingContext">
     /// A <see cref="StreamingContext"/> that specifies the destination for the serialization.
     /// </param>
+    #pragma warning disable 0618
     [SecurityPermission (
       SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.SerializationFormatter)]
+    #pragma warning restore 0618
     public override void GetObjectData (
       SerializationInfo serializationInfo, StreamingContext streamingContext)
     {
@@ -128,10 +130,12 @@ namespace WebSocketSharp.Net
     /// <param name="streamingContext">
     /// A <see cref="StreamingContext"/> that specifies the destination for the serialization.
     /// </param>
+    #pragma warning disable 0618
     [SecurityPermission (
       SecurityAction.LinkDemand,
       Flags = SecurityPermissionFlag.SerializationFormatter,
       SerializationFormatter = true)]
+    #pragma warning restore 0618
     void ISerializable.GetObjectData (
       SerializationInfo serializationInfo, StreamingContext streamingContext)
     {
