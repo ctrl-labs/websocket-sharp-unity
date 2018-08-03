@@ -4,6 +4,8 @@ This fork was made so that
 - We could make some light modifications to make it possible to drop the project directly into Unity as a submodule
 - We would have our own mirror
 
+Note that the original project comes with examples that were removed from this repo.
+
 ---
 
 ![Logo](websocket-sharp_logo.png)
