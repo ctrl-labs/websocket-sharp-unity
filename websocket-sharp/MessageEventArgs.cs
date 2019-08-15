@@ -44,8 +44,20 @@ namespace WebSocketSharp
   ///   the <see cref="Data"/> or <see cref="RawData"/> property.
   ///   </para>
   /// </remarks>
-  public class MessageEventArgs : EventArgs
+  ///
+
+  public interface IMessageEventArgs
   {
+    string Data { get; }
+    bool IsBinary { get; }
+    bool IsPing { get; }
+    bool IsText { get; }
+    byte[] RawData { get; }
+  }
+
+  public class MessageEventArgs : EventArgs, IMessageEventArgs
+	{
+
     #region Private Fields
 
     private string _data;
